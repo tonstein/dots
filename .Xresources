@@ -1,0 +1,70 @@
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+
+! COLORS (INCLUDING xterm)
+! =======================
+*selectToClipboard: true
+*faceName:    LiterationMono Nerd Font:pixelsize=13
+*background:  #0d1117
+*foreground:  #ecf2f8
+
+! black
+*color0:      #161b22
+*color8:      #21262d
+! red
+*color1:      #7ce38b
+*color9:      #7ce38b
+! green
+*color2:      #fa7970
+*color10:     #fa8970
+! yellow
+*color3:      #faa356
+*color11:     #faa356
+! blue
+*color4:      #77bdfb
+*color12:     #77bdfb
+! magenta
+*color5:      #cea5fb
+*color13:     #cea5fb
+! cyan
+*color6:      #a2d2fb
+*color14:     #a2d2fb
+! white
+*color7:      #89929b
+*color15:     #89929b
+! XTerm*color15:     #89929b
+
+! URXVT
+! ====
+URxvt*buffered: false
+URxvt.intensityStyles: false
+URxvt.font: xft:Liberation Mono:pixelsize=13, xft:LiterationMono Nerd Font:pixelsize=13
+URxvt.saveLines: 2000
+URxvt.scrollBar: false
+URxvt.cursorColor: white
+
+!! Extensions
+URxvt.perl-ext-common: default,matcher,resize-font,url-select,keyboard-select,clipboard
+URxvt.colorUL: #4682B4
+!! url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: urxvt -e lynx -cfg=~/.lynx.cfg -lss=~/.lynx.lss
+URxvt.url-select.underline: true
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.keysym.C-k:   font-size:increase
+URxvt.keysym.C-j:   font-size:decrease
+!! Matcher
+URxvt.url-launcher:	urxvt -e lynx -cfg=~/.lynx.cfg -lss=~/.lynx.lss
+URxvt.matcher.button: 1
+!!clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt*depth: 32
+URxvt.background: [90]#0d1117

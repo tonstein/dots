@@ -1,0 +1,127 @@
+configuration {
+    show-icons: true;
+    drun-display-format: " {name}";
+    display-drun: "Apps";
+    modi: "drun";
+}
+
+* {
+    bg:     #0d1117;
+    bg-alt: #161b22;
+    black:  #21262d;
+    gray:   #8c9298;
+    fg:     #ecf2f8;
+  
+    white:  #89929b;
+    red:    #7ce38b;
+    orange: #7ce38b;
+    yellow: #faa356;
+    green:  #fa7970;
+    blue:   #77bdfb;
+    blue2:  #77bdfb;
+    cyan:   #a2d2fb;
+    purple: #cea5fb;
+    
+    transp: #00000000;
+
+    padding: 0;
+    margin: 0;
+}
+
+window {
+    background-color: @blue;
+    text-color: @gray;
+
+    border: 0px;
+    border-radius: 0px;
+    border-color: @black;
+
+    width: 550;
+    x-offset: 0;
+    y-offset: 0;
+
+    anchor: center;
+    location: center;
+    children: [ inputbar, mainbox ];
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    background-color: @transp;
+}
+
+prompt {
+    enabled: false;
+    padding: 8px;
+    margin: 0px;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    background-color: @transp;
+    text-color: @black;
+}
+
+entry {
+    background-color: @transp;
+    text-color: @black;
+    placeholder-color: @black;
+    expand: true;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    padding: 8px;
+    blink: true;
+    font: "Liberation Mono 10";
+    placeholder: " Search ";
+}
+
+mainbox {
+    border: 2px 0px 0px 0px;
+    border-color: @black;
+    background-color: @bg;
+    children: [ listview];
+    padding: 8px;
+}
+
+listview {
+    background-color: @bg;
+    padding: 0px;
+    columns: 5;
+    lines: 5;
+    spacing: 8px;
+    cycle: false;
+    dynamic: true;
+    layout: vertical;
+    
+}
+
+element {
+    background-color: @transp;
+    text-color: @gray;
+    orientation: horizontal;
+    padding: 8px;
+    
+}
+
+element-icon {
+    background-color: #000000;
+    text-color: inherit;
+    vertical-align: 0.5;
+    size: 16px;
+    border: 0px;
+}
+
+element-text {
+    enabled: true;
+    background-color: @transp;
+    text-color: inherit;
+    expand: true;
+    vertical-align: 0.5;
+    font: "Liberation Mono 10";
+}
+
+element selected {
+    background-color: @bg;
+    text-color: @fg;
+    border: 0px;
+    border-radius: 0px;   
+    border-color: @black;
+}

@@ -1,0 +1,14 @@
+Config { overrideRedirect = False
+       , font     = "xft:Liberation Sans:pixelsize=13:antialias:true:hinting:true"
+       , bgColor  = "#0d1117"
+       , fgColor  = "#ecf2f8"
+       , position = TopSize L 100 28
+       , commands = [ 
+                    Run Date "%a  %Y-%m-%d  %H:%M" "date" 300
+                    , Run StdinReader
+                    ]
+       , sepChar  = "%"
+       , alignSep = "}{"
+       , template =  " %StdinReader% } %date% {"
+       }
+
