@@ -3,11 +3,7 @@
 Log into a fresh Ubuntu 22.04 LTS server installation and run:
 
 ```
-sudo apt install xinit 
-startx
-setxkbmap de
-exit
-sudo apt install vim htop ranger xterm rxvt-unicode git x11-server-utils
+sudo apt install vim htop ranger xterm rxvt-unicode git xinit x11-server-utils
 sudo apt install xmonad libghc-xmonad-dev libghc-xmonad-contrib-dev suckless-tools xmobar rofi
 sudo apt install qutebrowser 
 sudo apt install nitrogen picom lxappearance
