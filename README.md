@@ -3,6 +3,7 @@
 Log into a fresh Ubuntu 22.04 LTS server installation and clone this repository:
 
 ```
+sudo apt install git
 git clone https://github.com/tonstein/dots ~
 sudo cp -ri ~/dots/ ~/..
 ```
