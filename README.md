@@ -3,13 +3,13 @@
 Log into a fresh Ubuntu 22.04 LTS server installation and run:
 
 ```
-sudo apt install vim htop ranger xterm rxvt-unicode git xinit x11-xserver-utils
+sudo apt install vim htop ranger xterm rxvt-unicode git xinit x11-xserver-utils unzip
 sudo apt install xmonad libghc-xmonad-dev libghc-xmonad-contrib-dev suckless-tools xmobar rofi
 sudo apt install qutebrowser 
 sudo apt install nitrogen picom lxappearance
 
-git clone https://github.com/tonstein/dots
-mv dots/* ~
+git clone https://github.com/tonstein/dots ~
+sudo mv ~/dots/ ~/..
 
 mkdir -p ~/.local/share/fonts/LiberationMono && cd $_
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/LiberationMono.zip
