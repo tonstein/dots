@@ -23,7 +23,7 @@ mv 'photo-1524802414218-3983cd08ed53?ixlib=rb-4.0.3' 01.jpg
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim    # then :PlugInstall
+vim    # then :PlugInstall and :qa
 
 startx
 ```
