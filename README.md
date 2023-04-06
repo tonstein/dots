@@ -8,7 +8,8 @@ sudo apt install xmonad libghc-xmonad-dev libghc-xmonad-contrib-dev suckless-too
 sudo apt install qutebrowser 
 sudo apt install nitrogen picom lxappearance
 
-git clone https://github.com/tonstein/dots ~
+git clone https://github.com/tonstein/dots
+mv dots/* ~
 
 mkdir -p ~/.local/share/fonts/LiberationMono && cd $_
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/LiberationMono.zip
