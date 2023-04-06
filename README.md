@@ -1,19 +1,20 @@
 # My dotfiles
 
-Log into a fresh Ubuntu 22.04 LTS server installation and install:
+Log into a fresh Ubuntu 22.04 LTS server installation and clone this repository:
+
+```
+git clone https://github.com/tonstein/dots ~
+sudo cp -ri ~/dots/ ~/..
+```
+You'll get this README file to copy the following commands.
+
+First install:
 
 ```
 sudo apt install vim htop ranger xterm rxvt-unicode git xinit x11-xserver-utils unzip
 sudo apt install xmonad libghc-xmonad-dev libghc-xmonad-contrib-dev suckless-tools xmobar rofi
 sudo apt install qutebrowser 
 sudo apt install nitrogen picom lxappearance
-```
-
-Clone this repository:
-
-```
-git clone https://github.com/tonstein/dots ~
-sudo cp -ri ~/dots/ ~/..
 ```
 
 Download the LiterationMono Nerd Fonts:
